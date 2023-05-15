@@ -31,7 +31,7 @@ LOVA is a platform for creating and signing promises using smart contract techno
 
 ## License
 
-Copyright (C) 2023 Jack Smith Insulander, Felipe Stiernhoff, Maximiliano Cid, and Philip Andelic
+Copyright (C) 2023 Felipe Stiernhoff, Maximiliano Cid Ledezma
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
