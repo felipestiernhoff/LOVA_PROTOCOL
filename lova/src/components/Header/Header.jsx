@@ -1,13 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import {connectWallet} from '../../services/Services'
+import logo from '../../assets/logoTransparentBackground.webp'
 
 export function HeaderHome() {
+
   return (
-    <header id="header">
+    <>
+    <Link to="/">
       <figure id="homeBtn"> 
-        <img src="imgs/logoTransparentBackground.webp" id="homeBtnImg" alt="Home"></img>
+        <img src="" id="homeBtnImg" alt="Home"></img>
       </figure>
+      </Link>
+      <Link to="/dapp">
       <button id="dappLaunchBtn">Launch dApp</button>
-    </header>
+      </Link>
+    </>
   );
 }
 
@@ -17,11 +25,13 @@ export function HeaderApp() {
   };
 
   return (
-    <header id="header">
+   <>
+   <Link to='/'>
       <figure id="homeBtn">
-        <img src="imgs/logoTransparentBackground.webp" id="homeBtnImg" alt="Home"></img>
+        <img src={logo} id="homeBtnImg" alt="Home"></img>
       </figure>
+      </Link>
       <button id="connectWalletBtn" onClick={handleConnect}>Connect Wallet</button>
-    </header>
+    </>
   );
 }

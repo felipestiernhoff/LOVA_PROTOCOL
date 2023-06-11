@@ -23,7 +23,7 @@ import {
 
 import { sectionOneHtml as sectionOneHtml } from "./htmlExports/sectionOne.js";
 import { sectionTwoHtml as sectionTwoHtml } from "./htmlExports/sectionTwo.js";
-import { sectionThreeHtml as sectionThreeHtml } from "./htmlExports/sectionThree.js";
+// import { sectionThreeHtml as sectionThreeHtml } from "./htmlExports/sectionThree.js";
 import { createFooter } from "./htmlExports/createFooter.js";
 import { createHeaderHome, createHeaderApp } from "./htmlExports/createHeader.js";
 import { createPromiseHtml, joinPromiseHtml, endPromiseHtml, searchPromiseHtml } from "./htmlExports/promiseInterfaces.js";
@@ -76,14 +76,14 @@ function landingPage() {
     sectionTwo.innerHTML = sectionTwoHtml;
 
     //---------- SECTION THREE TXT -----------//
-    let sectionThree = document.createElement("section");
-    sectionThree.id = "sectionThree";
-    sectionThree.classList = "section";
-    sectionThree.innerHTML = sectionThreeHtml;
+    // let sectionThree = document.createElement("section");
+    // sectionThree.id = "sectionThree";
+    // sectionThree.classList = "section";
+    // sectionThree.innerHTML = sectionThreeHtml;
 
     //---------- APPENDING CONTENT TO DOC -----------//
     header = createHeaderHome();
-    main.append(sectionOne, sectionTwo, sectionThree);
+    main.append(sectionOne, sectionTwo);
     footer = createFooter(footer);
     document.body.append(header, main, footer);
 
